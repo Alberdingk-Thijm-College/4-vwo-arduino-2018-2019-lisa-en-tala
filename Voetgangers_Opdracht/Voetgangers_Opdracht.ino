@@ -1,3 +1,5 @@
+int remember = 0;
+
 void setup() {
 pinMode(1, OUTPUT);
 pinMode(2, OUTPUT);
@@ -49,7 +51,7 @@ void loop() {
   digitalWrite(4, HIGH);
   digitalWrite(11, LOW);
   delay(1000);
-}
+
 
 if(remember == 1)
 {
@@ -74,4 +76,5 @@ void wait(int seconds)
     }
     delay(1);
     seconds--;
-  }f
+  }
+}
